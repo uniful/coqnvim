@@ -2,8 +2,8 @@ return {
     -- 单词或符号快速取反意
     {
         "AndrewRadev/switch.vim",
+        cmd = {"Switch","SwitchExpend","SwitchReverse"},
         config = function()
-            -- NOTE: switch 手动定义需要增加的反意单词
             local switch_words = {
                 {"true", "false"},
                 {"on", "off"},

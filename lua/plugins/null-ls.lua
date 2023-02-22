@@ -8,14 +8,6 @@ return {
                 sources = {
                     -- Code Actions
                     null_ls.builtins.code_actions.eslint,  --javascript,javascriptact,typescript,typescriptact,vue
-                    null_ls.builtins.code_actions.gitsigns.with({
-                        disabled_filetypes = {"javascript","typescript","sh","c","cpp"},
-                        config = {
-                            filter_actions = function(title)
-                                return title:lower():match("blame") == nil -- filter out blame actions
-                            end,
-                        },
-                    }),
                     null_ls.builtins.code_actions.shellcheck, --sh
                     null_ls.builtins.code_actions.cspell.with({
                         disabled_filetypes = {"javascript","typescript","sh","c","cpp"}

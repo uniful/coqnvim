@@ -2,7 +2,7 @@ return {
 	-- 突出显示文本
 	{
 		"Pocco81/HighStr.nvim",
-        event = "VeryLazy",
+        event = {"BufRead","BufNewFile"},
 		opts = {
 			verbosity = 0,
 			saving_path = "/root/.cache/nvim/highstr/",

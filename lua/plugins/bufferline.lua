@@ -4,6 +4,7 @@ return {
         "akinsho/bufferline.nvim",
         event = "VeryLazy",
         version = "v3.*",
+        dependencies = {"famiu/bufdelete.nvim",lazy = true},
         opts = {
             options = {
                 -- 为每个 buffer 都配置一个序数

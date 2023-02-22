@@ -2,6 +2,7 @@ return {
 	-- LSP 基础服务
 	{
 		"neovim/nvim-lspconfig",
+        event = {"BufReadPost","BufNewFile"},
         config = function()
             local lspconfig = require('lspconfig')
             vim.g.coq_settings = {auto_start = true}

@@ -2,10 +2,11 @@ return {
      -- 显示滚动条
      {
         "petertriho/nvim-scrollbar",
+        event = "VeryLazy",
         config = function()
             local colors = {
-                Color = "#292E42",
-                Search = "#FC867",
+                Handle = "#292E42",
+                Search = "#1FC867",
                 Error = "#FD6883",
                 Warn = "#FFD886",
                 Info = "A9DC76",
@@ -16,7 +17,7 @@ return {
                 {
                     handle = {
                         -- 滚动条颜色
-                        color = colors.Color
+                        color = colors.Handle
                     },
                     marks = {
                         -- 诊断颜色，需要 LSP 支持

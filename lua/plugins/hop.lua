@@ -2,8 +2,8 @@ return {
     -- 快速跳转
     {
         "phaazon/hop.nvim",
-        event = "VeryLazy",
+        event = {"BufRead","BufNewFile"},
         branch = 'v2',
-        config = true
+        opts = {}
     }
 }

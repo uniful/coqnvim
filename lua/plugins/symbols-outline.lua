@@ -2,6 +2,7 @@ return {
     -- 使用lsp的视图符号
     {
         "simrat39/symbols-outline.nvim",
+        event = "BufRead",
         config = function ()
             local opts = {
                 highlight_hovered_item = true,

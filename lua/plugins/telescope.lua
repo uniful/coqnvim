@@ -3,10 +3,11 @@ return {
    {
     "nvim-telescope/telescope.nvim",
     branch='0.1.x',
+    cmd = "Telescope",
     dependencies = {
-        {"nvim-telescope/telescope-ui-select.nvim"}, --neovim核心内容可以填充到telescope
-        {"nvim-telescope/telescope-file-browser.nvim"}, --支持的文件和文件夹的同步创建、删除、重命名和移动
-        {"nvim-telescope/telescope-frecency.nvim"}, --在编辑历史中选择文件时提供智能优先级排序(以频率和新近度排序)
+        {"nvim-telescope/telescope-ui-select.nvim",lazy = true}, --neovim核心内容可以填充到telescope
+        {"nvim-telescope/telescope-file-browser.nvim",lazy = true}, --支持的文件和文件夹的同步创建、删除、重命名和移动
+        {"nvim-telescope/telescope-frecency.nvim",lazy = true}, --在编辑历史中选择文件时提供智能优先级排序(以频率和新近度排序)
     },
     config = function()
         local actions = require("telescope.actions")
