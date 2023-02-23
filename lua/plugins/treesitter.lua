@@ -6,6 +6,10 @@ return {
             {"nvim-treesitter/nvim-treesitter-textobjects",lazy = true},
             {"JoosepAlviste/nvim-ts-context-commentstring",lazy = true},
             {"mrjones2014/nvim-ts-rainbow",lazy =true},
+            {
+                "nvim-treesitter/nvim-treesitter-context", lazy = true,
+                opts = {}
+            }
         },
         build = {":TSUpdate"},
         config = function()
@@ -125,10 +129,5 @@ return {
                 }
             })
         end
-    },
-    -- 显示当前可见缓冲区内容的上下文
-    {
-        'nvim-treesitter/nvim-treesitter-context',
-        config = true
     }
 }

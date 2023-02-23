@@ -53,12 +53,11 @@ mapcmd('<leader>cQ', 'q!')
 mapcmd('<leader>cx', 'x')
 -- 健康检查
 mapcmd("<leader>ch","checkhealth")
--- nvim-code-action-menu
-mapcmd("<leader>ca", "CodeActionMenu")
 
 -- coq
 mapcmd("<leader>cd", "COQdeps")
 mapcmd("<leader>cn", "COQnow")
+
 
 -- D
 -- dap
@@ -159,9 +158,6 @@ mapcmd("<leader>it","IlluminateToggleBuf")
 -- K
 
 -- L
-
--- lazy
-mapcmd("<leader>lz", "Lazy")
 
 -- lspconfig
 maplua('<leader>la', 'vim.lsp.buf.code_action()')
@@ -297,9 +293,6 @@ mapcmd("<leader>sh", "Switch")
 mapkey('n', '<leader>ss', '/')
 mapkey('n', '<leader>sw', '/\\<lt>\\><left><left>')
 
--- vim-startupTime
-mapcmd("<leader>st", "StartupTime")
-
 -- symbols-outline
 -- 切换符号大纲
 mapcmd("<leader>syl", "SymbolsOutline")
@@ -326,14 +319,13 @@ mapcmd('<leader>tsh', "Telescope help_tags")
 mapcmd('<leader>tso', "Telescope oldfiles")
 mapcmd('<leader>tsm', "Telescope marks")
 -- 显示弹窗历史记录
-maplua('<leader>tsn', "require('telescope').extensions.notify.notify()")
-maplua("<leader>tsy", "require('notify').history()")
+maplua('<leader>tsn', "Telescope notify")
 -- projects
 mapcmd("<leader>tsp", "Telescope projects")
 -- telescope file_browser
 mapcmd("<leader>tse", "Telescope file_browser")
 -- telescope frecency
-maplua("<leader>tsr","require('telescope').extensions.frecency.frecency()")
+maplua("<leader>tsr", "Telescope frecency")
 
 -- twilight
 mapcmd("<leader>twl", "Twilight")

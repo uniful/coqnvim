@@ -22,7 +22,7 @@ local settings = {
     },
     ui = {
         icons = {
-            lazy = "鈴 ",
+            lazy = "鈴",
         }
     },
     checker = {
