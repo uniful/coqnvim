@@ -129,7 +129,7 @@ return {
           default = true;
         }
     },
-    -- 支持异步，将JavaScript中promise和async移植到lua
+    -- 支持异步
     {
         "kevinhwang91/promise-async",
         lazy = true

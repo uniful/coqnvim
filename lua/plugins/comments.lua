@@ -2,6 +2,7 @@ return {
      -- 代码注释
      {
         "numToStr/Comment.nvim",
+        event = "BufReadPost",
         config = function()
             local comment_string = require("ts_context_commentstring")
             require("Comment").setup({

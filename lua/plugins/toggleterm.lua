@@ -3,6 +3,7 @@ return {
     {
         "akinsho/toggleterm.nvim",
         version = '*',
+        event = "VeryLazy",
         config = function()
             -- 自定义终端
             local Terminal  = require('toggleterm.terminal').Terminal

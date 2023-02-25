@@ -293,13 +293,6 @@ mapcmd("<leader>sh", "Switch")
 mapkey('n', '<leader>ss', '/')
 mapkey('n', '<leader>sw', '/\\<lt>\\><left><left>')
 
--- symbols-outline
--- 切换符号大纲
-mapcmd("<leader>syl", "SymbolsOutline")
--- 关闭符号轮廓
-mapcmd("<leader>syc", "SymbolsOutlineClose")
--- 打开符号大纲
-mapcmd("<leader>syo", "SymbolsOutlineOpen")
 
 -- T
 -- ToggleTerm

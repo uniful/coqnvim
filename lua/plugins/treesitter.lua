@@ -20,7 +20,7 @@ return {
                 sync_install = true,
                 ensure_installed = { "c","cpp","python","lua","vim","cmake","bash","yaml","markdown","css","html","json","javascript","typescript"},
                 ignore_install = { }, -- parsers to not install
-                auto_install = true,
+                auto_install = false,
                 -- 高亮相关
                 highlight = {
                     -- 启用高亮支持
@@ -75,7 +75,7 @@ return {
                         selection_modes = {
                             ['@parameter.outer'] = 'v', -- charwise
                             ['@function.outer'] = 'V', -- linewise
-                            ['@class.outer'] = '<c-v>', -- blockwise
+                            ['@class.outer'] = '<m-v>', -- blockwise
                         },
                         include_surrounding_whitespace = true,
                     },
