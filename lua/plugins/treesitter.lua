@@ -2,6 +2,7 @@ return {
     -- 语法高亮
     {
         "nvim-treesitter/nvim-treesitter",
+        event = {"BufReadPre","BufNewFile"},
         dependencies = {
             {"nvim-treesitter/nvim-treesitter-textobjects",lazy = true},
             {"JoosepAlviste/nvim-ts-context-commentstring",lazy = true},
