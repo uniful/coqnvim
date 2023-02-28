@@ -102,11 +102,6 @@ return {
         "nvim-lua/plenary.nvim",
         lazy = true
     },
-    -- 避免重复回调
-    {
-        "tpope/vim-repeat",
-        event = "VeryLazy",
-    },
     -- 用户保存会话，输入历史
     {
         "kkharji/sqlite.lua",
@@ -128,10 +123,5 @@ return {
           color_icons = true;
           default = true;
         }
-    },
-    -- 支持异步
-    {
-        "kevinhwang91/promise-async",
-        lazy = true
     }
 }

@@ -6,12 +6,6 @@ return {
             local null_ls = require("null-ls")
             null_ls.setup({
                 sources = {
-                    -- Code Actions
-                    null_ls.builtins.code_actions.eslint,  --javascript,javascriptact,typescript,typescriptact,vue
-                    null_ls.builtins.code_actions.shellcheck, --sh
-                    null_ls.builtins.code_actions.cspell.with({
-                        disabled_filetypes = {"javascript","typescript","sh","c","cpp"}
-                    }),
                     -- Diagnostics
                     null_ls.builtins.diagnostics.cmake_lint,  --cmake
                     null_ls.builtins.diagnostics.eslint,  --javascript,javascriptact,typescript,typescriptact,vue
@@ -21,12 +15,11 @@ return {
                     null_ls.builtins.diagnostics.pylint,  --python
                     null_ls.builtins.diagnostics.shellcheck,  --sh
                     null_ls.builtins.diagnostics.tidy,  --html,xml
-                    null_ls.builtins.diagnostics.vint, --vim
                     null_ls.builtins.diagnostics.yamllint,  --yaml
                     null_ls.builtins.diagnostics.zsh, --zsh
                     null_ls.builtins.diagnostics.cspell.with({
                          disabled_filetypes = {"c","cpp","cmake","javascript","typescript","fish","json",
-                        "markdown","sh","lua","toml","html","xml","python","vim","yaml","zsh"}
+                        "markdown","sh","lua","toml","html","xml","python","yaml","zsh"}
                     }),
                     -- Formatting
                     null_ls.builtins.formatting.cmake_format, --cmake

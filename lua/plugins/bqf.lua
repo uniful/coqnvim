@@ -3,6 +3,8 @@ return {
     {
         "kevinhwang91/nvim-bqf",
         ft = "qf",
-        opts = {}
+        opts = {
+            auto_enable = true
+        }
     }
 }
