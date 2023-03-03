@@ -27,6 +27,10 @@ return {
                         Info = {color = colors.Info},
                         Hint = {color = colors.Hint},
                         Misc = {color = colors.Misc}
+                    },
+                    handlers = {
+                        gitsigns = true,
+                        search = true
                     }
                 }
             )

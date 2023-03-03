@@ -4,7 +4,7 @@ return {
         "RRethy/vim-illuminate",
         event = "BufReadPost",
         config = function ()
-            opts = {
+            local opts = {
                 providers = {
                     'lsp',
                     'treesitter',

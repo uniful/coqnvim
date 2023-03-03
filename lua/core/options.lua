@@ -1,7 +1,3 @@
--- 自动缩进策略
-vim.opt.filetype        = "plugin"
--- 开启语法高亮
-vim.opt.syntax          = "enable"
 -- 防止包裹
 vim.opt.wrap            = false
 -- 默认新窗口在右和下
@@ -15,7 +11,7 @@ vim.opt.ruler           = true
 -- 无操作时候交换文件写入磁盘等待的时间
 vim.opt.updatetime      = 100
 -- 高亮当前文本行
-vim.o.cursorline      = true
+vim.o.cursorline        = true
 -- 等待按键时长的时间
 vim.o.timeoutlen        = 500
 -- 外部修改时自动加载
@@ -52,9 +48,6 @@ vim.opt.listchars       = "space:·,tab:··,eol:↴"
 vim.o.wildmenu          = true
 -- 终端24位色彩支持
 vim.opt.termguicolors   = true
-if (vim.fn.has('termguicolors') == 1) then
-    vim.opt.termguicolors = true
-end
 -- 设置缩进
 vim.opt.autoindent      = true
 vim.opt.tabstop         = 4
@@ -85,7 +78,7 @@ vim.o.foldlevelstart    = 99
 vim.o.foldenable        = true
 -----------某些插件需要定义全局变量-----------
 --switch
-vim.g.switch_custom_definitions = push_words
+vim.g.switch_custom_definitions = "push_words"
 
 -- disable some useless standard plugins to save startup time
 -- these features have been better covered by plugins

@@ -215,17 +215,6 @@ vim.keymap.set("n", "]E", function()
   require("lspsaga.diagnostic").goto_next({ severity = vim.diagnostic.severity.ERROR })
 end)
 
--- Legendary
--- search keymaps, commands, and autocmds
-mapcmd("<leader>ldy", "Legendary")
--- search keymaps
-mapcmd("<leader>ldc", "Legendary commands")
--- search functions
-mapcmd("<leader>ldf", "Legendary functions")
--- search autocmds
-mapcmd("<leader>lda", "Legendary autocmds")
-
-
 
 -- M
 

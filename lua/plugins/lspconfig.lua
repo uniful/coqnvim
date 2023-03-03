@@ -12,8 +12,8 @@ return {
         config = function()
             local lspconfig = require('lspconfig')
             vim.g.coq_settings = {auto_start = true}
-            local servers = { 'clangd', 'tsserver', 'pyright','cmake','vimls',
-                'lua_ls','jsonls','yamlls','html',"cssls","taplo","bashls"}
+            local servers = { 'clangd', 'tsserver', 'pyright','vimls',
+                'lua_ls','jsonls','yamlls','html',"cssls","bashls"}
             for _, lsp in pairs(servers) do
                 lspconfig[lsp].setup(require('coq').lsp_ensure_capabilities({}))
             end

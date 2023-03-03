@@ -3,7 +3,10 @@ return {
     {
         "akinsho/toggleterm.nvim",
         version = '*',
-        event = "VeryLazy",
+        cmd = {"ToggleTerm","TermExec","ToggleTermToggleAll"},
+        keys = {
+            {"<leader>tg","<cmd>lua _lazygit_toggle()<CR>",desc="Lazygit Terminal"},
+        },
         config = function()
             -- 自定义终端
             local Terminal  = require('toggleterm.terminal').Terminal
