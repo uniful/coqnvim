@@ -29,7 +29,7 @@ end
 -- 关闭或启用自动保存功能
 mapcmd("<leader>at", "ASToggle")
 
--- B: 
+-- B:
 -- bufferline
 -- 关闭当前 buffer，由 bufdelete 插件所提供的方法
 mapcmd("<C-q>", "Bdelete!")
