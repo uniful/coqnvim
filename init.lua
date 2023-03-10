@@ -18,7 +18,7 @@ local settings = {
     },
     install = {
         missing = true,
-        colorscheme = { "everforest" },
+        colorscheme = { "onedark" },
     },
     ui = {
         icons = {

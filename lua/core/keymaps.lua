@@ -295,7 +295,7 @@ mapcmd("<leader>td", "TodoTelescope theme=dropdown")
 
 -- telescope
 mapcmd('<leader>tsw', "Telescope find_files")
-mapcmd('<leader>tsg', "Telescope live_grep")
+mapcmd('<leader>tsl', "Telescope live_grep")
 mapcmd('<leader>tsb', "Telescope buffers")
 mapcmd('<leader>tsh', "Telescope help_tags")
 mapcmd('<leader>tso', "Telescope oldfiles")

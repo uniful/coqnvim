@@ -2,7 +2,7 @@ return {
      -- 平滑滚动
      {
         "karb94/neoscroll.nvim",
-        evnet = "VeryLazy",
+        event = "VeryLazy",
         config = true,
     }
 }

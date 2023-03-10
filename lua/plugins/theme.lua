@@ -1,10 +1,18 @@
 return {
     {
-        "sainnhe/everforest",
+        "navarasu/onedark.nvim",
+        priority = 1000,
         config = function ()
-            vim.g.everforest_background = hard
-            vim.g.everforest_disable_italic_comment = 1
-            vim.cmd("colorscheme everforest")
+            require("onedark").setup({
+                style = "darker",
+                ending_tildes = true,
+                code_style = {
+                    comments = "italic",
+                    keywords = "bold,italic",
+                    functions = "bold"
+                }
+            })
+            require("onedark").load()
         end
     }
 }
