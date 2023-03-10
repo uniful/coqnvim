@@ -2,7 +2,7 @@ return {
      -- 代码注释
      {
         "numToStr/Comment.nvim",
-        event = "BufReadPost",
+        event = {"BufReadPost","BufNewFile"},
         config = function()
             require("Comment").setup({
                 toggler = {

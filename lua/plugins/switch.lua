@@ -2,6 +2,7 @@ return {
     -- 单词或符号快速取反意
     {
         "AndrewRadev/switch.vim",
+        lazy = true,
         cmd = {"Switch","SwitchExpend","SwitchReverse"},
         config = function()
             local switch_words = {

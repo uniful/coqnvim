@@ -4,7 +4,8 @@ return {
 		"neovim/nvim-lspconfig",
         dependencies = {
             {
-                "folke/neodev.nvim", lazy = true,
+                "folke/neodev.nvim",
+                lazy = true,
                 opts = {}
             }
         },

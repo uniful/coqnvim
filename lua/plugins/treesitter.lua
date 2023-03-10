@@ -21,7 +21,7 @@ return {
                 -- 同步下载高亮支持
                 sync_install = true,
                 ensure_installed = { "c","cpp","python","lua","vim","cmake","bash","yaml","markdown","css","html","json","javascript","typescript"},
-                ignore_install = { }, -- parsers to not install
+                ignore_install = {},
                 auto_install = false,
                 -- 高亮相关
                 highlight = {
@@ -52,8 +52,6 @@ return {
                 rainbow = {
                     enable = true,
                     extended_mode = true,
-                    -- colors = {}, -- table of hex strings
-                    -- termcolors = {} -- table of colour name strings
                     max_file_lines = nil
                 },
                 -- 根据当前上下文定义文件类型，由 nvim-ts-context-commentstring 插件提供
@@ -64,10 +62,7 @@ return {
                 textobjects = {
                     select = {
                         enable = true,
-
-                        -- Automatically jump forward to textobj, similar to targets.vim
                         lookahead = true,
-
                         keymaps = {
                             ["af"] = "@function.outer",
                             ["if"] = "@function.inner",

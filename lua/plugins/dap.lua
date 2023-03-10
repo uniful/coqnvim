@@ -2,6 +2,7 @@ return {
      -- 代码调试基础插件
     {
         "mfussenegger/nvim-dap",
+        lazy = true,
         event = {"BufRead","BufNewFile"},
         dependencies = {
             {"rcarriga/nvim-dap-ui", lazy = true},

@@ -2,7 +2,8 @@ return {
     -- 显示缩进线
     {
         "lukas-reineke/indent-blankline.nvim",
-        event = "BufReadPost",
+        lazy = true,
+        event = {"BufReadPre","BufNewFile"},
         opts = {
             -- 显示当前所在区域
             show_current_context = true,
