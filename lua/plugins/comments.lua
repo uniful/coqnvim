@@ -2,7 +2,16 @@ return {
      -- 代码注释
      {
         "numToStr/Comment.nvim",
-        event = {"BufReadPost","BufNewFile"},
+        lazy = true,
+        keys = {
+            {"gcc",mode = {"n"},desc = "line comment"},
+            {"gCC",mode = {"n"},desc = "block comment"},
+            {"gc",mode = {"v"},desc = "visual line comment"},
+            {"gC",mode = {"v"},desc = "visual block comment"},
+            {"gco",mode = {"n"},desc = "next line comment"},
+            {"gcO",mode = {"n"},desc = "prev line comment"},
+            {"gcA",mode = {"n"},desc = "tail line comment"}
+        },
         config = function()
             require("Comment").setup({
                 toggler = {
@@ -32,7 +41,7 @@ return {
     {
         "folke/todo-comments.nvim",
         cmd = {"TodoTrouble","TodoTelescope"},
-        event = "BufReadPost",
+        event = {"BufReadPost","BufNewFile"},
         opts = {
             keywords = {
                 -- alt ： 别名

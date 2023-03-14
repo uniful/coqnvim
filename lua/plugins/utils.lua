@@ -15,6 +15,6 @@ return {
     {
         "bennypowers/nvim-regexplainer",
         event = "BufRead",
-        config = true
+        opts = {}
     }
 }

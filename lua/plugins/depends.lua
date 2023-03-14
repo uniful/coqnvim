@@ -29,7 +29,7 @@ return {
                         ["<CR>"] = "Confirm",
                     },
                     i = {
-                        ["<C-c>"] = "Close",
+                        ["<M-c>"] = "Close",
                         ["<CR>"] = "Confirm",
                         ["<Up>"] = "HistoryPrev",
                         ["<Down>"] = "HistoryNext",
@@ -44,7 +44,6 @@ return {
                 enabled = true,
                 backend = { "telescope", "builtin", "nui" },
                 trim_prompt = true,
-                telescope = nil,
                 nui = {
                     position = "50%",
                     size = nil,
@@ -80,7 +79,7 @@ return {
                     min_height = { 10, 0.2 },
                     mappings = {
                         ["<Esc>"] = "Close",
-                        ["<C-c>"] = "Close",
+                        ["<M-c>"] = "Close",
                         ["<CR>"] = "Confirm",
                     },
                     override = function(conf)

@@ -5,6 +5,7 @@ return {
         version = '*',
         cmd = {"ToggleTerm","TermExec","ToggleTermToggleAll"},
         keys = {
+            {"<leader>ta","<cmd>ToggleTerm<CR>",desc = "Open Terminal"},
             {"<leader>tg","<cmd>lua _lazygit_toggle()<CR>",desc="Lazygit Terminal"},
         },
         config = function()

@@ -2,8 +2,10 @@ return {
     -- 语法高亮
     {
         "nvim-treesitter/nvim-treesitter",
+        build = {":TSUpdate"},
         lazy = true,
         event = {"BufReadPre","BufNewFile"},
+        cmd = {"TSUpdate","TSUpdateSync"},
         dependencies = {
             {"nvim-treesitter/nvim-treesitter-textobjects",lazy = true},
             {"JoosepAlviste/nvim-ts-context-commentstring",lazy = true},
@@ -13,7 +15,6 @@ return {
                 opts = {}
             }
         },
-        build = {":TSUpdate"},
         config = function()
             require("nvim-treesitter.configs").setup({
                 -- 安装的高亮支持来源

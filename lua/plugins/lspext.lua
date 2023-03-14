@@ -48,12 +48,14 @@ return {
      -- LSP UI 美化
     {
         "glepnir/lspsaga.nvim",
+        lazy = true,
         cmd = "Lspsaga",
         opts = {}
     },
     --显示代码诊断, 参考, telescope结果, quickfix和位置列表
     {
         "folke/trouble.nvim",
+        lazy = true,
         cmd = {"TroubleToggle","Trouble"},
         opts = {
             position = "bottom",
